@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Movements -->
+      <section class="section movements">
+  <div class="container movements__container">
+    <div class="movements__content">
+      <div class="servo-device__header">
+        <h3 class="uptitle movements__uptitle">Часть 2</h3>
+        <h1 class="title movements__title">Программирование движений</h1>
+      </div>
+
+      <div class="movements__description">
+        <div class="movements__wrapper">
+          <p class="text movements__text">
+            Шаг&nbsp;1. <br />
+            Робот управляется через Wi-Fi антенну и&nbsp;специальную среду
+            разработки с&nbsp;командной строкой на&nbsp;компьютере. Всё просто:
+            надо задать нужную команду для микроконтроллера.
+          </p>
+          <p class="text movements__text">
+            Сначала запустим робота и&nbsp;все системы. Выберите правильную
+            команду, чтобы это сделать:
+          </p>
+
+          <div class="movements__input">
+            <span class="movements__span">robot3/system:</span>
+            <span class="movements__field">?</span>
+          </div>
+
+          <ul class="movements__list">
+            <li class="movements__item movements__first-item false">
+              [view data]
+            </li>
+            <li class="movements__item movements__second-item one">[run]</li>
+            <li class="movements__item movements__third-item false">
+              [systemReset]
+            </li>
+          </ul>
+        </div>
+
+        <div class="movements__wrapper step2">
+          <p class="text movements__text">
+            Активирую систему... <br />
+            Питание подключено <br />
+            Нейросеть активирована <br />
+            Робот готов к&nbsp;работе!
+          </p>
+          <p class="text movements__text">
+            Шаг&nbsp;2. <br />
+            Роботу нужно уметь двигаться&nbsp;&mdash; давайте проверим,
+            готов&nbsp;ли робот к&nbsp;движению.
+          </p>
+
+          <div class="movements__input">
+            <span class="movements__span">robot3/system:</span>
+            <span class="movements__field">?</span>
+          </div>
+
+          <ul class="movements__list">
+            <li class="movements__item movements__first-item false">
+              [vision]
+            </li>
+            <li class="movements__item movements__second-item false">[init]</li>
+            <li class="movements__item movements__third-item two">[move]</li>
+          </ul>
+        </div>
+
+        <div class="movements__wrapper step3">
+          <p class="text movements__text">
+            Проверка сервоприводов <br />
+            Электродвигатели готовы к работе <br />
+            Устойчивость: удовлетворительная
+          </p>
+          <p class="text movements__text">
+            Шаг&nbsp;3. <br />
+            Давайте проверим камеру и&nbsp;систему компьютерного зрения робота.
+            Выберите подходящую команду.
+          </p>
+
+          <div class="movements__input">
+            <span class="movements__span">robot3/system:</span>
+            <span class="movements__field">?</span>
+          </div>
+
+          <ul class="movements__list">
+            <li class="movements__item movements__first-item three">
+              [vision]
+            </li>
+            <li class="movements__item movements__second-item false">
+              [imgWidth]
+            </li>
+            <li class="movements__item movements__third-item false">[run]</li>
+          </ul>
+        </div>
+
+        <div class="movements__wrapper step4">
+          <p class="text movements__text">
+            Ширина получаемого изображения: <br />
+            imgWidth = 720<br />
+            Высота получаемого изображения:<br />
+            imgHeight = 540<br />
+            Частота кадров:<br />
+            36 FPS<br />
+            Система визуального определения объектов активирована: вижу мяч
+          </p>
+          <p class="text movements__text">
+            Шаг&nbsp;4. <br />
+            Отлично! Робот распознал мяч&nbsp;&mdash; он&nbsp;лежит прямо
+            у&nbsp;него под ногами. А&nbsp;какой робофутбол без голевых
+            моментов? Пора бить по&nbsp;мячу! Выберите подходящую команду.
+          </p>
+
+          <div class="movements__input">
+            <span class="movements__span">robot3/system:</span>
+            <span class="movements__field">?</span>
+          </div>
+
+          <ul class="movements__list">
+            <li class="movements__item movements__first-item false">
+              [visionOff]
+            </li>
+            <li class="movements__item movements__second-item four">[kick]</li>
+            <li class="movements__item movements__third-item false">
+              [systemReset]
+            </li>
+          </ul>
+        </div>
+
+        <div class="movements__wrapper step5">
+          <p class="text movements__text">
+            Команда: удар по мячу <br />
+            Попытка удара…<br />
+            Попытка удара…<br />
+            …<br />
+            Данные датчиков: что-то пошло не так!<br />
+            Необходимо откалибровать параметры для удара<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="movements__img">
+      <img src="./images/movements/movements1.jpg" alt="" />
+    </div>
+
+    <div class="alert">
+      <h4 class="title alert__title">Ой, это неверный вариант!</h4>
+      <p class="text alert__text">
+        Загляните в справочник, если не получается выбрать правильный ответ.
+      </p>
+
+      <div class="alert__exit"></div>
+    </div>
+
+    <div class="congratulations movements-congratulations">
+      <div class="congratulations__description">
+        <h2 class="subtitle congratulations__subtitle">Такое бывает!</h2>
+        <p class="text congratulations__text">
+          Иногда инженеры тратят десятки попыток на&nbsp;отладку всех систем,
+          чтобы всё работало идеально. Давайте и&nbsp;мы&nbsp;попробуем!
+        </p>
+      </div>
+      <a href="settings-servo.html" class="congratulations__btn"
+        >К настройкам</a
+      >
+    </div>
+  </div>
+</section>
+
+      <!-- Movements End -->
+    </main>
+
+    <script src="js/programming.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <main>
+      <!-- Hitting Ball -->
+      <section class="section hitting-ball">
+  <div class="container hitting-ball__container">
+    <div class="hitting-ball__robot">
+      <img src="./images/test/robot.png" alt="" />
+    </div>
+    <div class="hitting-ball__leg">
+      <img src="./images/test/leg.png" alt="" />
+    </div>
+    <div class="hitting-ball__ball">
+      <img src="./images/test/ball.png" alt="" />
+    </div>
+
+    <div class="hitting-ball__description">
+      <div class="servo-device__header">
+        <h3 class="uptitle hitting-ball__uptitle">Часть 3</h3>
+        <h1 class="title hitting-ball__title">Тестирование удара по мячу</h1>
+      </div>
+    </div>
+
+    <div class="hitting-ball__content hitting-content">
+      <div class="hitting-content__header">
+        <p class="text hitting-content__header-text">Robot Command 2.0</p>
+
+        <ul class="hitting-content__list">
+          <li class="hitting-content__item">
+            <span class="hitting-content__span hitting-content__hide"></span>
+          </li>
+          <li class="hitting-content__item">
+            <span class="hitting-content__span hitting-content__expand"></span>
+          </li>
+          <li class="hitting-content__item">
+            <span class="hitting-content__span hitting-content__close"></span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="text hitting-content__text">Вернёмся в командную строку.</p>
+      <p class="text hitting-content__text">
+        Мяч перед роботом, все параметры в норме. <br />
+        Составьте команду, чтобы забить гол.
+      </p>
+
+      <div class="movements__input">
+        <span class="movements__field hitting-content__field input-one active"
+          ><p>?</p>
+          <span class="close"></span>
+        </span>
+        <span class="movements__field hitting-content__field input-two"
+          ><p>?</p>
+          <span class="close"></span
+        ></span>
+        <span class="movements__field hitting-content__field input-three"
+          ><p>?</p>
+          <span class="close"></span
+        ></span>
+      </div>
+
+      <p class="text hitting-content__text need-hide">
+        Нажмите на часть, чтобы добавить её в строку.
+      </p>
+
+      <ul class="movements__list hitting-content-list need-hide">
+        <li class="movements__item hitting-content-item">[ PDparameters ]</li>
+        <li class="movements__item hitting-content-item">[ visionOff ]</li>
+        <li class="movements__item hitting-content-item">[ kick# ]</li>
+        <li class="movements__item hitting-content-item">[ stop ]</li>
+        <li class="movements__item hitting-content-item">[ robot3/system: ]</li>
+      </ul>
+
+      <p class="text hitting-content__text need-hide">
+        Чтобы запустить команду, нажмите Enter
+      </p>
+      <p class="text hitting-content__text dont-show1 delete">
+        Команда: удар по мячу
+      </p>
+      <p class="text hitting-content__text dont-show2 delete">Удар выполнен</p>
+      <p class="text hitting-content__text dont-show3 delete">
+        Система компьютерного зрения: мяч в сетке!
+      </p>
+      <p class="text hitting-content__text dont-show4 delete">ГОЛ!</p>
+    </div>
+
+    <a class="practice__btn hittin-btn">Завершить</a>
+
+    <div class="welldone">
+      <div class="welldone__wrapper">
+        <h1 class="title welldone__title">Отличная работа!</h1>
+        <p class="text welldone__text">
+          Вы&nbsp;научили робота бить по&nbsp;мячу и&nbsp;готовы покорять
+          футбольные чемпионаты!
+        </p>
+        <p class="text welldone__text">
+          Вы&nbsp;собрали не&nbsp;только всего робота,
+          но&nbsp;и&nbsp;сервопривод, без которого ничего не&nbsp;будет
+          двигаться. А&nbsp;когда возникли неполадки, быстро разобрались
+          в&nbsp;параметрах.
+        </p>
+      </div>
+
+      <a href="" class="practice__btn welldone__btn">Перейти к финалу </a>
+    </div>
+  </div>
+</section>
+
+      <!-- Hitting Ball End -->
+    </main>
+
+    <script src="js/test.min.js"></script>
+  </body>
+</html>

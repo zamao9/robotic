@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Settings -->
+      <section class="section settings">
+  <div class="container settings__container">
+    <div class="settings__description">
+      <div class="servo-device__header">
+        <h3 class="uptitle settings__uptitle">Часть 3</h3>
+        <h1 class="title settings__title">Настройка сервоприводов</h1>
+      </div>
+
+      <div class="settings__img">
+        <img src="./images/settings/settings1.jpg" alt="" />
+        <img
+          class="second-img five"
+          src="./images/settings/settingsLeg.png"
+          alt=""
+        />
+        <img class="ball" src="./images/settings/ball.png" alt="" />
+      </div>
+    </div>
+
+    <div class="settings__content">
+      <div class="servo-device__header">
+        <h3 class="uptitle settings__uptitle italic">1. Угол удара</h3>
+        <h1 class="text settings__text">
+          Найдите верное положение для удара по мячу
+        </h1>
+
+        <div class="range-slider">
+          <div class="settings__subtitle">
+            <h2 class="subtitle">Угол наклона ноги</h2>
+            <p class="subtitle-span">p = <span> 0</span>&deg;</p>
+          </div>
+
+          <div class="range-slider__input">
+            <input
+              type="range"
+              min="1"
+              max="9"
+              values="5"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+
+          <div class="labels">
+            <span class="label">-45&deg;</span>
+            <span class="label">-25&deg;</span>
+            <span class="label">-15&deg;</span>
+            <span class="label">-5&deg;</span>
+            <span class="label">0</span>
+            <span class="label">5&deg;</span>
+            <span class="label">15&deg;</span>
+            <span class="label">25&deg;</span>
+            <span class="label">45&deg;</span>
+          </div>
+        </div>
+
+        <button type="button" class="settings__btn">Проверить</button>
+      </div>
+      <div class="servo-device__header">
+        <h3 class="uptitle settings__uptitle italic">
+          2. подбор коэффициентов
+        </h3>
+        <h1 class="text settings__text hide">
+          От&nbsp;коэффициента&nbsp;К <sub>р</sub> зависит, как быстро нога
+          достигнет мяча, от&nbsp;К <sub>d</sub> &mdash;появятся&nbsp;ли
+          ненужные вибрации. Подробности читайте в&nbsp;справочнике, а&nbsp;пока
+          двигайте ползунки, чтобы достичь идеальных значений.
+        </h1>
+
+        <div class="range-slider grid-slider hide">
+          <p class="subtitle-span column1">К <sub>p </sub> =</p>
+
+          <div class="range-slider__input column2">
+            <input
+              type="range"
+              min="1"
+              max="11"
+              value="6"
+              class="slider slider2"
+              id="myRange2"
+            />
+          </div>
+
+          <div class="labels column3">
+            <span class="label">0</span>
+            <span class="label">0,2</span>
+            <span class="label">0,4</span>
+            <span class="label">0,6</span>
+            <span class="label">0,8</span>
+            <span class="label">1</span>
+            <span class="label">1,2</span>
+            <span class="label">1,4</span>
+            <span class="label">1,6</span>
+            <span class="label">1,8</span>
+            <span class="label">2</span>
+          </div>
+
+          <p class="subtitle-span column1">К<sub>d </sub> =</p>
+
+          <div class="range-slider__input column2">
+            <input
+              type="range"
+              min="1"
+              max="11"
+              value="10"
+              class="slider slider3"
+              id="myRange3"
+            />
+          </div>
+
+          <div class="labels column3">
+            <span class="label">0</span>
+            <span class="label">0,1</span>
+            <span class="label">0,2</span>
+            <span class="label">0,3</span>
+            <span class="label">0,4</span>
+            <span class="label">0,5</span>
+            <span class="label">0,6</span>
+            <span class="label">0,7</span>
+            <span class="label">0,8</span>
+            <span class="label">0,9</span>
+            <span class="label">1</span>
+          </div>
+        </div>
+        <div class="grid-slider__img hide">
+          <img src="./images/settings/diagramm1.jpg" alt="" />
+        </div>
+        <button type="button" class="settings__btn grid-slider-btn hide">
+          Проверить
+        </button>
+      </div>
+    </div>
+
+    <div class="alert">
+      <h4 class="title alert__title">Ой, это неверный вариант!</h4>
+      <p class="text alert__text">
+        Загляните в справочник, если не получается выбрать правильный ответ.
+      </p>
+
+      <div class="alert__exit"></div>
+    </div>
+
+    <div class="congratulations movements-congratulations">
+      <div class="congratulations__description">
+        <h2 class="subtitle congratulations__subtitle">Супер!!</h2>
+        <p class="text congratulations__text">
+          Вы&nbsp;получили нужные коэффициенты для настройки программы. Пора
+          приступать к&nbsp;проверке робота.
+        </p>
+      </div>
+      <a href="test.html" class="congratulations__btn settings-btn"
+        >Начать тестирование</a
+      >
+    </div>
+  </div>
+</section>
+
+      <!-- Settings End -->
+    </main>
+
+    <script src="js/settings.min.js"></script>
+  </body>
+</html>
